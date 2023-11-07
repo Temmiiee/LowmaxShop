@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lowmax Shop</title>
+    <title>Contactez-nous - Lowmax Shop</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
                         <li><a href="index.html">Washi</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
                 <li><a href="actu.html">Actu</a></li>
             </ul>
         </nav>
@@ -30,7 +30,31 @@
         </div>
     </header>
 
-    <!-- Contenu de votre site -->
+    <main>
+        <h1>Contactez-nous</h1>
+        <p>Pour toute question ou problème, n'hésitez pas à nous contacter en utilisant le formulaire ci-dessous.</p>
+
+        <form action="scripts/envoyer.php" method="post">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sujet">Sujet :</label>
+            <input type="text" id="sujet" name="sujet" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <h2>Informations importantes</h2>
+
+        <section>
+            <h3>Terms Of Service</h3>
+            <p>Insérez ici les Termes et Conditions du site.</p>
+        </section>
+    </main>
 
     <footer>
         <div class="social-icons">
