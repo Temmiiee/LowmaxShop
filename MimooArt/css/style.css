@@ -1,0 +1,156 @@
+/* Common styles for all screen sizes */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+#mimootitle{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: aquamarine;
+    text-shadow: 1px 1px 2px lightblue, 0 0 25px lightblue, 0 0 5px lightblue;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #006400;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #66CDAA;
+    border-bottom: 2px solid #66CDAA;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+main {
+    width: 100%;
+    padding: 0 20px; /* Add some padding to center the content */
+}
+
+.artist-info {
+    background-color: rgba(192, 192, 192, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Media query for screens 769px and wider (typical desktop screens) */
+@media (min-width: 769px) {
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: white; /* White color for the icon labels */
+        transition: transform 0.2s;
+        font-size: 20px; /* Increased font size */
+    }
+
+    .icons a:hover {
+        transform: scale(1.1);
+        color: #66CDAA; /* Light SeaGreen color on hover */
+        transition: transform 0.2s;
+    }
+
+    .icons img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
+}
+
+/* Media query for screens between 481px and 768px (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 24px; /* Adjust title font size for tablets */
+    }
+
+    .artist-info h2 {
+        font-size: 16px; /* Adjust subtitle font size for tablets */
+    }
+
+    .artist-info p {
+        font-size: 14px; /* Adjust paragraph font size for tablets */
+    }
+}
+
+/* Media query for screens up to 480px (typical mobile devices) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px; /* Adjust title font size for mobile */
+    }
+
+    .artist-info h2 {
+        font-size: 16px; /* Adjust subtitle font size for mobile */
+    }
+
+    .artist-info p {
+        font-size: 14px; /* Adjust paragraph font size for mobile */
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column; /* Stack icons vertically for mobile */
+        align-items: center; /* Center icons horizontally */
+        margin-top: 20px;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: white; /* White color for the icon labels */
+        transition: transform 0.2s;
+        font-size: 18px; /* Decreased font size for mobile */
+    }
+    
+    .icons a:hover {
+        transform: scale(1.1);
+        color: #66CDAA; /* Light SeaGreen color on hover */
+        transition: transform 0.2s;
+    }
+}

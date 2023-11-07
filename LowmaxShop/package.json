@@ -1,0 +1,18 @@
+{
+    "name": "LowmaxShop",
+    "description": "Boutique en ligne de Lowmax",
+    "main": "server.js",
+    "dependencies": {
+      "express": "^4.17.1"
+    },
+    "scripts": {
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "http://lowmaxshop.github.io/"
+    },
+    "author": "Temmiie",
+    "license": "CC BY-NC-ND"
+  }
+  
