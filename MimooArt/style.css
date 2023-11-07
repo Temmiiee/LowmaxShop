@@ -6,7 +6,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-    background-image: "../images/background.png";
+    background-image: url('https://github.com/Temmiiee/Temmiiee.github.io/blob/main/MimooArt/images/background.png?raw=true');
 }
 
 #mimootitle{
