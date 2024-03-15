@@ -1,1 +1,2 @@
-Voici le répertoire du site web de lowmax
+(WIP)
+Future website for the shop of the artist LowMax 
